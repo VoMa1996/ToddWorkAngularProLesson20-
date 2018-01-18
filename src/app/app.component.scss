@@ -1,0 +1,27 @@
+.window {
+    display: flex;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+
+    .buttons {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        button {
+            height: 30%;
+            margin: 10px;
+        }
+    }
+
+    .users {
+        width: 70%;
+        display: flex;
+        app-one {
+            width: 49%;
+        }
+        app-two {
+            width: 49%;
+        }
+    }
+}
