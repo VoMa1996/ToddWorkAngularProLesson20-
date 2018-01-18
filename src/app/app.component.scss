@@ -3,6 +3,7 @@
     border: 1px solid black;
     width: auto;
     height: auto;
+    margin-bottom: 20px;
 
     .buttons {
         width: 30%;
@@ -24,4 +25,21 @@
             width: 49%;
         }
     }
+
+    .CreditBox {
+        margin: 8px auto;
+        width: 70%;
+        height: 80%;
+    
+        input {
+            width: 100%;
+        }
+    }
+
+}
+
+.window2 {
+    border: 1px solid black;
+    width: 300px;
+    height: 60px;
 }

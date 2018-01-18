@@ -5,7 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
-import { ThreeComponent } from './three/three.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
+import { CreditCardDirective } from './credit-card.directive';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ThreeComponent } from './three/three.component';
     AppComponent,
     OneComponent,
     TwoComponent,
-    ThreeComponent
+    CreditCardComponent,
+    CreditCardDirective
   ],
   imports: [
     BrowserModule
