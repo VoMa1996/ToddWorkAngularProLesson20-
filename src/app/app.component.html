@@ -10,6 +10,7 @@
   </app-three>
 </div> -->
 
+
 <div class="window">
   <div class="buttons">
     <button (click)="addProp()">Add property</button>
@@ -22,6 +23,8 @@
     <app-two [user]="user"></app-two>
   </div>
 </div>
+
+
 <!-- <div class="window">
   <div class="CreditBox">
       <label>Credit Card Number
@@ -34,9 +37,45 @@
   </div>
 </div> -->
 
-<div class="window2">
+<!-- <div class="window2">
     <app-credit-card>
 
     </app-credit-card>
-</div>
+</div> -->
+
+
+
+
+<!-- <div class="window2">
+  <ul>
+    <li *myFor="let item of items; let i = index;">
+      {{i}} Member: {{item.name | json}}
+    </li>
+    <ng-template myFor [myForOf]="items" let-item let-i="index">
+        <li>
+          {{i}} Member: {{item.name | json}}
+        </li>
+    </ng-template>
+  </ul>
+</div> -->
+
+<!-- <div class="window2">
+    <ul>
+      <li *myFor="let item of items; let i = index;">
+        {{i}} Member: {{item.name | json}}
+      </li>
+      <ng-template myFor [myForOf]="items" let-item let-i="index">
+          <li>
+            {{i}} Member: {{item.name | json}}
+          </li>
+      </ng-template>
+    </ul>
+  </div> -->
+
+  <div class="window2">
+    <div *ngFor="let file of files">
+      <p>{{file.name}}</p>
+      <p>{{file.size | filesize: 'megabytes' }}</p>
+    </div>
+  </div>
 

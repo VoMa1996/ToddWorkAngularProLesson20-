@@ -6,7 +6,11 @@ import { AppComponent } from './app.component';
 import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { CreditCardComponent } from './credit-card/credit-card.component';
-import { CreditCardDirective } from './credit-card.directive';
+import { CreditCardDirective } from './creditDirective/credit-card.directive';
+import { TooltipDirective } from './tooltip/tooltip.directive';
+import { MyForDirective } from './myFor/my-for.directive';
+
+import { FileSizePipe } from './filesize.pipe'
 
 
 @NgModule({
@@ -15,7 +19,10 @@ import { CreditCardDirective } from './credit-card.directive';
     OneComponent,
     TwoComponent,
     CreditCardComponent,
-    CreditCardDirective
+    CreditCardDirective,
+    TooltipDirective,
+    MyForDirective,
+    FileSizePipe
   ],
   imports: [
     BrowserModule
