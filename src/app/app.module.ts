@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { StockInventoryModule } from './stock-inventory/stock-inventory.module';
 
 import { AppComponent } from './app.component';
 import { OneComponent } from './one/one.component';
@@ -10,8 +11,7 @@ import { CreditCardDirective } from './creditDirective/credit-card.directive';
 import { TooltipDirective } from './tooltip/tooltip.directive';
 import { MyForDirective } from './myFor/my-for.directive';
 
-import { FileSizePipe } from './filesize.pipe'
-
+import { FileSizePipe } from './filesize.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { FileSizePipe } from './filesize.pipe'
     FileSizePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StockInventoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

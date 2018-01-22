@@ -18,30 +18,35 @@ import { FileSizePipe } from './filesize.pipe';
     FileSizePipe
   ]
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
 
-  files: Files[];
-  mapped: Files[];
 
-  ngOnInit() {
-    this.files = [
-      {name: 'logo.svg', size: 212234, type: 'image/svg'},
-      {name: 'banner.jpg', size: 46477, type: 'image/jpg'},
-      {name: 'background.png', size: 575476, type: 'image/png'}
-    ];
 
-    this.mapped = this.files.map(file => {
-      return {
-        name: file.name,
-        type: file.type,
-        size: this.fileSizePipe.transform(file.size, 'mb')
-      };
-    });
-  }
 
-  constructor(
-    private fileSizePipe: FileSizePipe
-  ) {}
+  //lesson28
+  // files: Files[];
+  // mapped: Files[];
+
+  // ngOnInit() {
+  //   this.files = [
+  //     {name: 'logo.svg', size: 212234, type: 'image/svg'},
+  //     {name: 'banner.jpg', size: 46477, type: 'image/jpg'},
+  //     {name: 'background.png', size: 575476, type: 'image/png'}
+  //   ];
+
+  //   this.mapped = this.files.map(file => {
+  //     return {
+  //       name: file.name,
+  //       type: file.type,
+  //       size: this.fileSizePipe.transform(file.size, 'mb')
+  //     };
+  //   });
+  // }
+
+  // constructor(
+  //   private fileSizePipe: FileSizePipe
+  // ) {}
+  //lesson28 -> 27
 
 
 //   user: any = {
