@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
+import { Product } from '../../containers/models/product.interface';
+
 @Component ({
     selector: 'stock-selector',
     styleUrls: ['./stock-selector.component.scss'],
@@ -10,4 +12,7 @@ import { FormGroup } from '@angular/forms';
 export class StockSelectorComponent {
     @Input()
     parent: FormGroup;
+
+    @Input()
+    products: Product[];
 }
