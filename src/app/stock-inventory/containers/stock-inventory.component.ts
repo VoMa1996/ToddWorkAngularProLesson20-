@@ -10,9 +10,14 @@ export class StockInventoryComponent {
 
   form = new FormGroup({
     store: new FormGroup({
-      branch: new FormControl('V182'),
-      code: new FormControl('1234')
-    })
+      branch: new FormControl(''),
+      code: new FormControl('')
+    }),
+    selector: new FormGroup({
+      product_id: new FormControl(''),
+      quality: new FormControl(10)
+    }),
+    stock: new FormArray([])
   })
 
   onSubmit() {
