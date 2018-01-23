@@ -1,5 +1,5 @@
 <div class="stock-selector" [formGroup]="parent"> 
-  <div formGroupName="selector">
+  <div class="formSelector" formGroupName="selector">
   <select formControlName="product_id">
       <option value="">
           Select Stock
@@ -15,8 +15,10 @@
     min="10"
     max="1000"
     formControlName="quantity">
-  <button type="button">
-      Add stock
+  <button 
+    (click)="onAdd()"
+    type="button">
+    Add stock
   </button>
 </div>
 </div>

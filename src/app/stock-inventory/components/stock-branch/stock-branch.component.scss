@@ -1,0 +1,17 @@
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    input {
+        border: 1px solid gray;
+        outline: none;
+        border-radius: 5px;
+        margin: auto;
+        width: 90%;
+        height: 15px;
+    }
+    input::placeholder {
+        text-indent: 5px;
+    }
+}

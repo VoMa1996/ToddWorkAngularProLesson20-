@@ -1,6 +1,6 @@
 <div class="stock-products" [formGroup]="parent"> 
   <div formArrayName="stock">
-      <div *ngFor="let item of stocks; let i = index;">
+      <div class="formArray" *ngFor="let item of stocks; let i = index;">
         <div class="stock-product__content" [formGroupName]="i">
             <div class="stock-product__name">
                 {{item.value.product_id}}
@@ -12,7 +12,9 @@
              max="1000"
              formControlName="quantity">
         </div>
-        <button type="button">
+        <button
+          type="button"
+          (click)="onRemoved(item, i)">
             Remove
         </button>
       </div>
